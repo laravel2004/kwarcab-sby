@@ -2,4 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,300;1,400&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.bg-image {
+    background-image: url('./../assets/kwarcab.jpeg');
+}
 

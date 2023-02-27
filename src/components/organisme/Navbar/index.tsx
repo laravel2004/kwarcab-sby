@@ -14,7 +14,7 @@ const Navbar = () => {
     }, [])
 
     return (
-        <div className={scroll > 50 ? 'navbar bg-base-100 px-36 shadow-xl fixed pb-6' : 'navbar bg-base-100 px-36'}>
+        <div className={scroll > 50 ? 'navbar opacity-70 px-36 shadow-xl fixed pb-6 w-full z-40 bg-slate-100 font-semibold' : 'navbar bg-base-100 px-36 fixed w-full bg-transparent pb-6 font-semibold'}>
             <div className="flex-1">
                 <a className="btn btn-ghost normal-case text-xl">Kwarcab Surabaya</a>
             </div>
