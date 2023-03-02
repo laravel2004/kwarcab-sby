@@ -1,9 +1,8 @@
 import Card from "@/components/atoms/Card";
 import Grid from "@/components/atoms/Grid";
 import MainContainer from "@/components/atoms/MainContainer";
-import Carousel from "@/components/organisme/Carousel";
-import Footer from "@/components/organisme/Footer";
 import MainHero from "@/components/organisme/MainHero";
+import Modal from "@/components/organisme/Modal/Modal";
 import { RootContext } from "@/service/reducer/Reducer";
 import Image from "next/image";
 import Link from "next/link";
@@ -42,7 +41,7 @@ const Hero = () => {
                 <h3>Layanan Kepanduan</h3>
                 <small className="text-base font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, voluptatem.</small>
             </div>
-            <div className="flex mt-10 gap-8 justify-center">
+            <div className="flex mt-10 gap-8 justify-center flex-col md:flex-row">
                 <Card 
                     image= {HeroImg}
                     title= 'Bhakti Sosial'
@@ -75,33 +74,20 @@ const Hero = () => {
                 <MainHero />
             </Grid>
             <h3 className="text-4xl font-semibold mt-32 mb-10 ">Informasi Penting</h3>
-            <div className="grid grid-cols-2 bg-slate-200 p-5 rounded-lg">
+            <div className="grid md:grid-cols-2 bg-slate-200 p-5 rounded-lg">
                 <div>
                     <div>
                         <p className="mt-5">Raimuna 2023</p>
-                        <p className="mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia repellendus sapiente minus libero dolorum, officiis sit voluptatem, quis tempora beatae amet necessitatibus iste praesentium, quaerat explicabo inventore dolorem odio!</p>
+                        <p className="mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia repellendus sapiente minus libero dolorum.</p>
                         <p className="mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, hic.</p>
-                        <Link href='#' className="p-3 btn-primary mt-16 px-6 rounded-lg">Daftar Sekarang</Link>
+                        <label htmlFor="my-modal-5" className="p-3 btn-primary mt-16 px-6 rounded-lg">Daftar Sekarang</label>
+                        <Modal />
                     </div>
                 </div>
                 <div className="flex justify-end">
                     <Image src={Raimuna} alt='raimuna' className="items-center" />
                 </div>
             </div>
-            <div className="grid grid-cols-2 bg-slate-200 p-5 rounded-lg mt-10">
-                <div>
-                    <div>
-                        <p className="mt-5">Raimuna 2023</p>
-                        <p className="mt-16">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia repellendus sapiente minus libero dolorum, officiis sit voluptatem, quis tempora beatae amet necessitatibus iste praesentium, quaerat explicabo inventore dolorem odio!</p>
-                        <p className="mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, hic.</p>
-                        <Link href='#' className="p-3 btn-primary mt-16 px-6 rounded-lg">Daftar Sekarang</Link>
-                    </div>
-                </div>
-                <div className="flex justify-end">
-                    <Image src={Raimuna} alt='raimuna' className="items-center" />
-                </div>
-            </div>
-        <Footer />
         </MainContainer>
        </div>
     )

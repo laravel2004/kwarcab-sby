@@ -9,7 +9,7 @@ type Props = {
 
 const Button = (props : Props) => {
     return (
-        <button className="p-5 rounded-lg">
+        <button className={`p-3 rounded-lg ${props.className}`}>
             {props.title}
         </button>
     )

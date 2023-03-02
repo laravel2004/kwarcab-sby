@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from '@/components/organisme/Navbar';
 import Hero from '@/components/template/Hero';
+import Footer from '@/components/organisme/Footer';
 
 export default function Home() {
 
@@ -13,9 +14,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='bg-slate-100'>
+      <main className='bg-slate-100 overflow-x-hidden'>
         <Navbar />
         <Hero />
+        <Footer/>
       </main>
     </>
   )
